@@ -1,7 +1,7 @@
 package cli
 
 import (
-	"azsumego/credentials"
+	"azsume/credentials"
 	"log"
 	"os"
 )

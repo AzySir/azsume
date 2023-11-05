@@ -1,7 +1,7 @@
 package credentials
 
 import (
-	"azsumego/utils"
+	"azsume/utils"
 	"fmt"
 	"log"
 )

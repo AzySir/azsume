@@ -1,0 +1,23 @@
+#!/bin/bash
+if [ "$1" = "clear" ] || [ "$1" = "unset" ]; then
+    echo "Clearing..."
+    unset ARM_CLIENT_ID
+    unset ARM_CLIENT_SECRET
+    unset ARM_TENANT_ID
+    return 
+fi
+
+
+RESULT=$(azsumego "$@")
+if [ "$1" != "set" ]; then
+    echo "${RESULT}"
+fi
+
+# # Need to add a rainy day scenario in 
+# # This will work on a good day
+if [ "$1" = "set" ]; then
+    if [[ ! "$RESULT" =~ "error" ]]; then
+        eval "${RESULT}"
+        az account show -o table
+    fi
+fi

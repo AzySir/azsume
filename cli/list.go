@@ -1,8 +1,8 @@
 package cli
 
 import (
-	"azsumego/tablepkg"
-	"azsumego/utils"
+	"azsume/tablepkg"
+	"azsume/utils"
 
 	"github.com/jedib0t/go-pretty/table"
 )

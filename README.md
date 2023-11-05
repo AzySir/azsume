@@ -29,3 +29,8 @@ azsume set <SP Name>    - Will Set your ENV variables with the values provided i
 azsume get <SP Name>    - Will Print out your Service Principal values
 
 `More to come...`
+
+## To Do
+
+Add a azsume add to add to ~/.azure/credentials myself
+Add a azsume login to login with the az cli to keep it localised

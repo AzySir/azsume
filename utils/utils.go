@@ -9,7 +9,8 @@ import (
 )
 
 func LoadIni() (*ini.File, error) {
-	inidata, err := ini.Load("%s/.azure/credentials", os.Getenv("HOME"))
+	file := fmt.Sprintf("%s/.azure/credentials", os.Getenv("HOME"))
+	inidata, err := ini.Load(file)
 	if err != nil {
 		log.Printf("[ERROR] Fail to read file: %v", err)
 		os.Exit(1)

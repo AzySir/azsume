@@ -37,11 +37,12 @@ func realMain(args []string) string {
 }
 
 func cliOptions() string {
-	var result = `Please input a command.\n
+	var result = `Please input a command.
   Options:
-	list\tThis will list the available service principals
-	set\tThis will set the service principal credentials as ENV variables")
-	login\tThis will login to the service principal")
+	init  - Set Alias in SHELL profile to allow for "set" functionality to work
+	list  - This will list the available service principals
+	set   - This will set the service principal credentials as ENV variables")
+	login - This will login to the service principal")
 `
 	return result
 }

@@ -30,7 +30,7 @@ func realMain(args []string) string {
 		case "login":
 			result = "login"
 		default:
-			result = cliOptions()
+			result = cli.Set(args)
 		}
 	}
 	return result

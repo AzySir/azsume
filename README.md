@@ -13,6 +13,7 @@ Then follow the format below:
 ARM_CLIENT_ID=<insert client id>
 ARM_CLIENT_SECRET=<insert client secret>
 ARM_TENANT_ID=<insert tenant id>
+ARM_SUBSCRIPTION_ID=<insert subscription id>
 ```
 
 ```
@@ -20,6 +21,7 @@ ARM_TENANT_ID=<insert tenant id>
 ARM_CLIENT_ID="12345678-1234-1234-1234-1234567890ab
 ARM_CLIENT_SECRET="1aBc3D4eF6gH8iJkL0mN2oPqRsT4uVxW5yZ7aB"
 ARM_TENANT_ID="3d7cf3eb-bb94-61d8-4ac4-98c113d6b83f"
+ARM_SUBSCRIPTION_ID="f22243de8-0c3f-123f-8dca-c31bad22a13z"
 ```
 
 ## Commands (So Far)

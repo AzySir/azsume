@@ -9,7 +9,7 @@ import (
 	"gopkg.in/ini.v1"
 )
 
-func GetCredentials(args []string) string {
+func GetCredentials(args []string) (string, string) {
 	var result string
 	section, profile := getSection(args)
 	if len(section.KeysHash()) == 0 {
@@ -24,7 +24,7 @@ func GetCredentials(args []string) string {
 	}
 	result += fmt.Sprintf("export ARM_PROFILE=%s\n", profile)
 
-	return result
+	return result, profile
 }
 
 func getSection(args []string) (*ini.Section, string) {

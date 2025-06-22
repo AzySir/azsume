@@ -24,7 +24,7 @@ func realMain(args []string) string {
 		case "set":
 			result = cli.Set(args)
 		case "get":
-			result = cli.Get(args)
+			result, _ = cli.Get(args)
 		case "sync":
 			fmt.Println("Sync")
 		case "login":
